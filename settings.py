@@ -111,7 +111,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'bigfive',
-        'display_name': 'mini big Five',
+        'display_name': 'Dynamic timeout',
         'num_demo_participants': 1,
         'app_sequence': ['bigfive'],
     },

@@ -14,7 +14,7 @@ class Demographics(Page):
     def before_next_page(self):
         if BigFive.has_timeout():
             current_time = int(time.time())
-            timeout = 600 if self.player.gender == 'Male' else 300
+            timeout = 60 if self.player.gender == 'Male' else 30
             expiration_time = current_time + timeout
             timeout, created = PageTimeout.objects.get_or_create(
                 participant=self.participant,
